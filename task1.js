@@ -30,11 +30,11 @@ const formattedPrice = price.toLocaleString("ru", {
 });
 
 let formattedRange;
-if ((range === "month")) {
+if (range === "month") {
   formattedRange = "месяц";
-} else if ((range === "day")) {
+} else if (range === "day") {
   formattedRange = "день";
-} else if ((range === "week")) {
+} else if (range === "week") {
   formattedRange = "неделя";
 }
 

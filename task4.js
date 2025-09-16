@@ -10,9 +10,15 @@ let word = 'меню' 
 
 1 */
 
-const word = prompt('your word')
+const word = prompt("your word");
 
-const result = 1
+let wordLength = word.length;
+let result;
 
-console.log(result)
+if (Math.sqrt(wordLength) * Math.sqrt(wordLength) === wordLength) {
+  result = 1;
+} else {
+  result = 0;
+}
 
+console.log(result);

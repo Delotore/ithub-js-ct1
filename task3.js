@@ -1,4 +1,4 @@
-/**Задача №3 
+/*Задача №3 
 
 (состоит из двух пунктов)
 
@@ -32,10 +32,35 @@ let sign = "/"  
 
 Делить на 0 нельзя! */
 
-const a = Number(prompt('number A'))
-const b = Number(prompt('number B'))
-const sign = prompt('operation (*/+-)')
+const a = Number(prompt("number A"));
+const b = Number(prompt("number B"));
+const sign = prompt("enter operator *+-");
+if (!Number.isFinite(a)) {
+  throw new Error("incorect number");
+}
+if (!Number.isFinite(b)) {
+  throw new Error("incorect number");
+}
 
-let result
+let result;
 
-console.log(result)
+switch (sign) {
+  case "*":
+    result = a * b;
+    break;
+  case "/":
+    if (b === 0) {
+      result = "cant devise by zero";
+    } else {
+      result = a / b;
+    }
+    break;
+  case "+":
+    result = a + b;
+    break;
+  case "-":
+    result = a - b;
+    break;
+}
+
+console.log(result);

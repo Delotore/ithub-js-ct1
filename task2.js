@@ -12,25 +12,23 @@ let weather = "clear"  
 
 "golf" */
 
-const temp = +prompt('temp')
-const weather = prompt('weather (clear/cloudy')
+const temp = +prompt("temp");
+const weather = prompt("weather (clear/cloudy");
 
-if(!Number.isFinite(temp)){
-    throw new Error('incorect temp')
+if (!Number.isFinite(temp)) {
+  throw new Error("incorect temp");
 }
-if((weather !== 'clear')&& (weather !== 'cloudy')){
-    throw new Error('incorect weather')
+if (weather !== "clear" && weather !== "cloudy") {
+  throw new Error("incorect weather");
 }
 
 let result;
-if (temp >= 25 && weather === 'clear'){
-    result = 'golf'
-}
-else if (temp >= 10 || weather === 'cloudy' ){
-    result = 'bowling'
-}
-else {
-    result = 'hiking'
+if (temp >= 25 && weather === "clear") {
+  result = "golf";
+} else if (temp >= 10 || weather === "cloudy") {
+  result = "bowling";
+} else {
+  result = "hiking";
 }
 
-console.log(result)
+console.log(result);
