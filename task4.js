@@ -14,8 +14,7 @@ const word = prompt("your word");
 
 let wordLength = word.length;
 let result;
-
-if (Math.sqrt(wordLength) * Math.sqrt(wordLength) === wordLength) {
+if (wordLength % 2 === 0) {
   result = 1;
 } else {
   result = 0;
